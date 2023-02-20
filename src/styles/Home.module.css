@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: white;
+  color: black
+}
+.content {
+  flex: 10;
+  height: inherit; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.sidebar {
+  flex: 2;
+  border: solid 1px #EBECED;
+}
+
+.workflow {
+  flex: 5;
+}
+
+@media only screen and (max-width: 425px)  {
+  .sidebar {
+    display: none;
+  }
+}
